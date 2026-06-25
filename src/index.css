@@ -1,0 +1,99 @@
+:root {
+  /* Dark space background for star visibility */
+  --bg: #0a0e1a;
+  --bg-elev: #121829;
+  --bg-elev-2: #1a2238;
+
+  /* Pastel blue for headings, links, accents */
+  --text-primary: #a8c7ff;
+  --accent: #a8c7ff;
+  --accent-soft: rgba(168, 199, 255, 0.12);
+  --accent-border: rgba(168, 199, 255, 0.35);
+
+  /* White for readable paragraph body */
+  --text-body: #e8edf5;
+  --text-muted: #7a8aa8;
+
+  --border: rgba(168, 199, 255, 0.15);
+  --shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.6);
+
+  --sans: system-ui, 'Segoe UI', Roboto, sans-serif;
+  --mono: ui-monospace, Consolas, monospace;
+
+  font: 17px/160% var(--sans);
+  color-scheme: dark;
+  color: var(--text-body);
+  background: var(--bg);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+}
+
+#root {
+  width: 100%;
+  min-height: 100svh;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--sans);
+  font-weight: 600;
+  color: var(--text-primary);
+  margin: 0;
+  letter-spacing: -0.02em;
+}
+
+h1 {
+  font-size: clamp(2.25rem, 6vw, 3.75rem);
+  line-height: 1.1;
+}
+
+h2 {
+  font-size: clamp(1.5rem, 3.5vw, 2.25rem);
+}
+
+p {
+  margin: 0;
+}
+
+a {
+  color: var(--text-primary);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: #fff;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+}
+
+::selection {
+  background: var(--accent-soft);
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  :root {
+    font-size: 16px;
+  }
+}

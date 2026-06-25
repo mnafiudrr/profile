@@ -1,0 +1,8 @@
+services:
+  web:
+    build: .
+    image: profile-spa:latest
+    container_name: profile-spa
+    ports:
+      - "${WEB_PORT:-8080}:80"
+    restart: unless-stopped
