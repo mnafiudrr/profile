@@ -5,7 +5,7 @@ export const profile = {
   title: "Full-Stack Software Engineer",
   tagline:
     "Building reliable web, mobile, and backend systems that solve real business problems.",
-  email: "nafiumndrr@gmail.com",
+  email: "n@fiu.my.id",
   avatar: "/avatar.svg",
 } as const;
 
